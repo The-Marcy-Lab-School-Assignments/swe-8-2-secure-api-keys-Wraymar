@@ -2,15 +2,15 @@
 // Imports
 //////////////////////////
 
-const path = require('path');
-const express = require('express');
+const path = require("path");
+const express = require("express");
 
 //////////////////////////
 // Constants
 //////////////////////////
 
 const port = 8080;
-const pathToDistFolder = path.join(__dirname, '../frontend/dist');
+const pathToDistFolder = path.join(__dirname, "../frontend/dist");
 const app = express();
 
 //////////////////////////
@@ -25,4 +25,6 @@ app.use(serveStatic);
 // Listener
 //////////////////////////
 
-app.listen(port, () => console.log(`listening at http://localhost:${port}`)); 
+app.listen(port, () => console.log(`listening at http://localhost:${port}`));
+
+//
